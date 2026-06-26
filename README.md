@@ -1,25 +1,25 @@
 # Trabalho IHC - Hunter
 
-Interface web estatica desenvolvida para a disciplina de Interacao Humano-Computador (IHC). O projeto simula um aplicativo mobile de gestao de oficina mecanica, com telas baseadas em um layout criado no Figma.
+Interface web estática desenvolvida para a disciplina de Interação Humano-Computador (IHC). O projeto simula um aplicativo mobile de gestão de oficina mecânica, com telas baseadas em um layout criado no Figma.
 
 ## Sobre o projeto
 
-O Hunter centraliza informacoes operacionais de uma oficina, como avisos, veiculos no patio, ordens de servico e orcamentos. O foco do trabalho e apresentar um prototipo navegavel, com estrutura visual fiel ao design de referencia e fluxos principais conectados entre si.
+O Hunter centraliza informações operacionais de uma oficina, como avisos, veículos no pátio, ordens de serviço e orçamentos. O foco do trabalho é apresentar um protótipo navegável, com estrutura visual fiel ao design de referência e fluxos principais conectados entre si.
 
 ## Funcionalidades representadas
 
-- Painel inicial com avisos da oficina, resumo de veiculos e atalhos de acao.
+- Painel inicial com avisos da oficina, resumo de veículos e atalhos de ação.
 - Tela de avisos com alertas operacionais.
-- Resumo geral de orcamentos e ordens de servico.
-- Fluxo de ordens de servico:
+- Resumo geral de orçamentos e ordens de serviço.
+- Fluxo de ordens de serviço:
   - painel de OS;
   - detalhe de uma OS em andamento;
-  - tela de confirmacao de servico finalizado.
-- Fluxo de orcamentos:
-  - painel de orcamentos pendentes;
-  - criacao de novo orcamento;
-  - tela de confirmacao de orcamento finalizado.
-- Navegacao compartilhada por atributos `data-nav-target`, controlada pelo arquivo `nav.js`.
+  - tela de confirmação de serviço finalizado.
+- Fluxo de orçamentos:
+  - painel de orçamentos pendentes;
+  - criação de novo orçamento;
+  - tela de confirmação de orçamento finalizado.
+- Navegação compartilhada por atributos `data-nav-target`, controlada pelo arquivo `nav.js`.
 
 ## Tecnologias utilizadas
 
@@ -64,9 +64,9 @@ O Hunter centraliza informacoes operacionais de uma oficina, como avisos, veicul
 
 ## Como executar localmente
 
-O projeto nao possui dependencias de build, framework ou servidor obrigatorio. Para executar:
+O projeto não possui dependências de build, framework ou servidor obrigatório. Para executar:
 
-1. Clone o repositorio:
+1. Clone o repositório:
 
 ```bash
 git clone https://github.com/gllugli/Trabalho_IHC.git
@@ -80,25 +80,25 @@ cd Trabalho_IHC
 
 3. Abra o arquivo `index.html` no navegador.
 
-Opcionalmente, use a extensao Live Server do VS Code para testar a navegacao com recarregamento automatico.
+Opcionalmente, use a extensão Live Server do VS Code para testar a navegação com recarregamento automático.
 
-## Paginas principais
+## Páginas principais
 
 | Tela | Arquivo |
 | --- | --- |
-| Inicio | `index.html` |
+| Início | `index.html` |
 | Avisos | `avisos/avisos.html` |
 | Resumo geral | `resumo/resumo.html` |
-| Painel de ordens de servico | `os/painel-os.html` |
-| Ordem de servico em andamento | `os/nova-os.html` |
-| Servico finalizado | `os/os-finalizada.html` |
-| Painel de orcamentos | `orcamento/painel-orcamentos.html` |
-| Novo orcamento | `orcamento/novo-orcamento.html` |
-| Orcamento finalizado | `orcamento/orcamento-finalizado.html` |
+| Painel de ordens de serviço | `os/painel-os.html` |
+| Ordem de serviço em andamento | `os/nova-os.html` |
+| Serviço finalizado | `os/os-finalizada.html` |
+| Painel de orçamentos | `orcamento/painel-orcamentos.html` |
+| Novo orçamento | `orcamento/novo-orcamento.html` |
+| Orçamento finalizado | `orcamento/orcamento-finalizado.html` |
 
-## Observacoes
+## Observações
 
-- A navegacao entre telas usa `data-nav-target`; ao criar novos atalhos, basta informar o caminho da pagina no atributo.
-- A pasta `figma-assets/` reune imagens e icones usados pelo prototipo.
-- O arquivo `.gitignore` atual ignora `figma-assets/*`, entao esses assets precisam estar disponiveis localmente para que todos os icones e imagens aparecam corretamente.
-- Como o projeto e estatico, nao ha etapa de instalacao, compilacao ou deploy configurada neste repositorio.
+- A navegação entre telas usa `data-nav-target`; ao criar novos atalhos, basta informar o caminho da página no atributo.
+- A pasta `figma-assets/` reúne imagens e ícones usados pelo protótipo.
+- O arquivo `.gitignore` atual ignora `figma-assets/*`, então esses assets precisam estar disponíveis localmente para que todos os ícones e imagens apareçam corretamente.
+- Como o projeto é estático, não há etapa de instalação, compilação ou deploy configurada neste repositório.
