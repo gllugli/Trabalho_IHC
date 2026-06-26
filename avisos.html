@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Avisos</title>
+	<link rel="stylesheet" href="avisos.css">
+</head>
+<body>
+	<div class="page-shell">
+		<header class="topbar" aria-label="Cabeçalho">
+			<button class="icon-button" type="button" aria-label="Voltar">
+				<img src="figma-assets/back-arrow.svg" alt="">
+			</button>
+			<div class="brand">Hunter</div>
+			<button class="icon-button" type="button" aria-label="Buscar">
+				<img src="figma-assets/search.svg" alt="">
+			</button>
+		</header>
+
+		<main class="content" aria-label="Avisos">
+			<section class="content-head">
+				<h1>Avisos</h1>
+				<a href="#" class="clear-all">Limpar tudo</a>
+			</section>
+
+			<section class="alerts" aria-label="Lista de avisos">
+				<article class="alert-card alert-card--pending">
+					<div class="alert-icon alert-icon--pending" aria-hidden="true">
+						<img src="figma-assets/alert-pending.svg" alt="">
+					</div>
+					<div class="alert-body">
+						<div class="alert-meta-row">
+							<div class="alert-kicker alert-kicker--pending">Peças Pendentes</div>
+							<div class="alert-time">Há 5 min</div>
+						</div>
+						<h2 class="alert-title">Aprovação de Componentes</h2>
+						<p class="alert-text">O Toyota Corolla (Placa ABC-1234) aguarda aprovação para troca de pastilhas de freio dianteiras.</p>
+						<div class="alert-actions">
+							<button class="action-button action-button--primary" type="button">Ver Detalhes</button>
+							<button class="action-button action-button--secondary" type="button">Ignorar</button>
+						</div>
+					</div>
+				</article>
+
+				<article class="alert-card alert-card--delay">
+					<div class="alert-icon alert-icon--delay" aria-hidden="true">
+						<img src="figma-assets/alert-delay.svg" alt="">
+					</div>
+					<div class="alert-body">
+						<div class="alert-meta-row">
+							<div class="alert-kicker alert-kicker--delay">Atraso de Entrega</div>
+							<div class="alert-time">Há 15 min</div>
+						</div>
+						<h2 class="alert-title">Honda Civic (XYZ-9876)</h2>
+						<p class="alert-text">O serviço de suspensão está levando mais tempo que o previsto. O prazo de entrega original era 14:00.</p>
+					</div>
+				</article>
+
+				<article class="alert-card alert-card--approved">
+					<div class="alert-icon alert-icon--approved" aria-hidden="true">
+						<img src="figma-assets/alert-approved.svg" alt="">
+					</div>
+					<div class="alert-body">
+						<div class="alert-meta-row">
+							<div class="alert-kicker alert-kicker--approved">Orçamento Aprovado</div>
+							<div class="alert-time">Há 1h</div>
+						</div>
+						<h2 class="alert-title">Novo Trabalho Iniciado</h2>
+						<p class="alert-text">O cliente Ricardo Silva aprovou o orçamento #4592 para a revisão geral do Jeep Compass.</p>
+					</div>
+				</article>
+
+				<article class="alert-card alert-card--system">
+					<div class="alert-icon alert-icon--system" aria-hidden="true">
+						<img src="figma-assets/alert-system.svg" alt="">
+					</div>
+					<div class="alert-body">
+						<div class="alert-meta-row">
+							<div class="alert-kicker alert-kicker--system">Sistema</div>
+							<div class="alert-time">Hoje, 08:30</div>
+						</div>
+						<h2 class="alert-title">Atualização Concluída</h2>
+						<p class="alert-text">O módulo de faturamento foi atualizado para a versão 2.4.1.</p>
+					</div>
+				</article>
+			</section>
+
+			<section class="end-state" aria-label="Fim das notificações recentes">
+				<img src="figma-assets/frame-1107.png" alt="" class="end-state-image">
+				<p>Fim das notificações recentes</p>
+			</section>
+		</main>
+
+		<nav class="bottom-nav" aria-label="Navegação inferior">
+			<a class="nav-item" href="#" data-nav-target="index.html">
+				<img src="figma-assets/home.svg" alt="">
+				<span>Home</span>
+			</a>
+			<a class="nav-item nav-item--active" href="#" aria-current="page" data-nav-target="avisos.html">
+				<img src="figma-assets/avisos.svg" alt="">
+				<span>Avisos</span>
+			</a>
+			<a class="nav-item" href="#" data-nav-target="resumo.html">
+				<img src="figma-assets/resumo.svg" alt="">
+				<span>Resumo</span>
+			</a>
+			<a class="nav-item" href="#">
+				<img src="figma-assets/perfil.svg" alt="">
+				<span>Perfil</span>
+			</a>
+		</nav>
+		<script src="nav.js"></script>
+	</div>
+</body>
+</html>
