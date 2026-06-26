@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Serviço Finalizado</title>
+	<link rel="stylesheet" href="os-finalizada.css">
+</head>
+<body>
+	<div class="tela-os-finalizada">
+		<header class="cabecalho" aria-label="Cabeçalho">
+			<button class="botao-voltar" type="button" aria-label="Voltar">
+				<svg viewBox="0 0 24 24" aria-hidden="true">
+					<path d="M15 18 9 12l6-6"></path>
+				</svg>
+			</button>
+			<div class="titulo-cabecalho">Serviço Finalizado</div>
+			<button class="botao-perfil" type="button" aria-label="Perfil">
+				<svg viewBox="0 0 24 24" aria-hidden="true">
+					<circle cx="12" cy="12" r="8.2"></circle>
+					<circle cx="12" cy="9.8" r="2.4"></circle>
+					<path d="M7.4 17.1c1.1-2 2.7-3 4.6-3s3.5 1 4.6 3"></path>
+				</svg>
+			</button>
+		</header>
+
+		<main class="conteudo" aria-label="Serviço finalizado">
+			<section class="confirmacao" aria-labelledby="titulo-confirmacao">
+				<div class="icone-sucesso" aria-hidden="true">
+					<svg viewBox="0 0 24 24">
+						<path d="m6.2 12.4 4 4 7.6-8.2"></path>
+					</svg>
+				</div>
+				<h1 id="titulo-confirmacao">Pronto para entrega!</h1>
+				<p>O veículo passou por todos os testes e o<br>serviço foi concluído com sucesso.</p>
+			</section>
+
+			<section class="cartao-veiculo" aria-label="Veículo">
+				<div class="icone-veiculo" aria-hidden="true">
+					<svg viewBox="0 0 24 24">
+						<path d="M5.3 11.1h13.4L17.8 8a1.8 1.8 0 0 0-1.7-1.2H7.9A1.8 1.8 0 0 0 6.2 8l-.9 3.1Z"></path>
+						<path d="M4.8 11.1h14.4v5.7H4.8zM7 16.8v1.4M17 16.8v1.4"></path>
+						<circle cx="8" cy="14.2" r=".9"></circle>
+						<circle cx="16" cy="14.2" r=".9"></circle>
+					</svg>
+				</div>
+				<div class="dados-veiculo">
+					<h2>Toyota Corolla</h2>
+					<span class="placa">ABC-1234</span>
+				</div>
+			</section>
+
+			<section class="cartao-resumo" aria-labelledby="titulo-resumo">
+				<h2 id="titulo-resumo">RESUMO DA ORDEM</h2>
+				<div class="item-resumo">
+					<div>
+						<h3>Mão de Obra</h3>
+						<p>Serviço técnico especializado</p>
+					</div>
+					<strong>R$ 250,00</strong>
+				</div>
+				<div class="item-resumo">
+					<div>
+						<h3>Peças</h3>
+						<p>Pastilhas de freio (Cerâmica)<br>Óleo 5W30 Sintético</p>
+					</div>
+					<strong>R$ 480,00</strong>
+				</div>
+				<div class="total-resumo">
+					<span>Total</span>
+					<strong>R$ 730,00</strong>
+				</div>
+			</section>
+
+			<section class="acoes" aria-label="Ações">
+				<button class="botao-primario" type="button">
+					<svg viewBox="0 0 24 24" aria-hidden="true">
+						<rect x="4" y="7" width="16" height="10" rx="1.5"></rect>
+						<path d="M4 10h16M8 14h3"></path>
+					</svg>
+					<span>Registrar Pagamento</span>
+				</button>
+				<button class="botao-secundario" type="button">
+					<svg viewBox="0 0 24 24" aria-hidden="true">
+						<path d="M7 4h10v16H7z"></path>
+						<path d="M9.5 8h5M9.5 11.5h5M9.5 15h3.2"></path>
+					</svg>
+					<span>Gerar Recibo</span>
+				</button>
+			</section>
+		</main>
+
+		<nav class="navegacao" aria-label="Navegação inferior">
+			<a class="nav-item" href="../index.html" data-nav-target="../index.html">
+				<img src="../figma-assets/home.svg" alt="">
+				<span>Home</span>
+			</a>
+			<a class="nav-item nav-item-ativo" href="../resumo/resumo.html" aria-current="page">
+				<img src="../figma-assets/nav-resumo.svg" alt="">
+				<span>Resumo</span>
+			</a>
+			<a class="nav-item" href="../avisos/avisos.html" data-nav-target="../avisos/avisos.html">
+				<img src="../figma-assets/avisos.svg" alt="">
+				<span>Avisos</span>
+			</a>
+			<a class="nav-item" href="#">
+				<img src="../figma-assets/perfil.svg" alt="">
+				<span>Perfil</span>
+			</a>
+		</nav>
+	</div>
+	<script src="../nav.js"></script>
+</body>
+</html>

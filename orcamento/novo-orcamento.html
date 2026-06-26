@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Novo Orçamento</title>
+	<link rel="stylesheet" href="novo-orcamento.css">
+</head>
+<body>
+	<div class="tela-novo-orcamento">
+		<header class="cabecalho" aria-label="Cabeçalho">
+			<button class="botao-menu" type="button" aria-label="Menu">
+				<svg viewBox="0 0 24 24" aria-hidden="true">
+					<path d="M4 7h16M4 12h16M4 17h16"></path>
+				</svg>
+			</button>
+			<div class="marca">Hunter</div>
+			<div class="titulo-acao">Novo Orçamento</div>
+		</header>
+
+		<main class="conteudo" aria-label="Novo orçamento">
+			<section class="secao secao-identificacao" aria-labelledby="titulo-identificacao">
+				<div class="secao-cabecalho">
+					<svg viewBox="0 0 24 24" aria-hidden="true">
+						<circle cx="9" cy="8" r="3"></circle>
+						<path d="M3.5 19c.8-3.4 2.6-5.1 5.5-5.1s4.7 1.7 5.5 5.1"></path>
+						<path d="M16.5 8.5a2.4 2.4 0 0 1 0 4.8M18.2 15.3c1.3.7 2 1.9 2.3 3.7"></path>
+					</svg>
+					<h1 id="titulo-identificacao">Identificação</h1>
+				</div>
+
+				<div class="grupo-campo">
+					<label for="cliente">Cliente</label>
+					<div class="campo">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<circle cx="10.5" cy="10.5" r="5.8"></circle>
+							<path d="m15 15 4.6 4.6"></path>
+						</svg>
+						<input id="cliente" type="search" placeholder="Buscar por nome ou CPF...">
+					</div>
+				</div>
+
+				<div class="grupo-campo">
+					<label for="veiculo">Veículo</label>
+					<div class="campo">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path d="M5 12h14l-1.2-4.2A2 2 0 0 0 15.9 6H8.1a2 2 0 0 0-1.9 1.8L5 12Z"></path>
+							<path d="M4 12h16v6H4zM7 18v1.6M17 18v1.6"></path>
+							<circle cx="8" cy="15.5" r="1.1"></circle>
+							<circle cx="16" cy="15.5" r="1.1"></circle>
+						</svg>
+						<input id="veiculo" type="text" placeholder="Placa ou modelo...">
+					</div>
+				</div>
+			</section>
+
+			<section class="secao secao-servicos" aria-labelledby="titulo-servicos">
+				<div class="secao-cabecalho secao-cabecalho-com-acao">
+					<div class="titulo-secao">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path d="M14.7 6.3a4.2 4.2 0 0 0-5.3 5.3L4.7 16.3a1.7 1.7 0 0 0 2.4 2.4l4.7-4.7a4.2 4.2 0 0 0 5.3-5.3l-2.9 2.9-2.4-2.4z"></path>
+						</svg>
+						<h2 id="titulo-servicos">Serviços</h2>
+					</div>
+					<button class="botao-adicionar" type="button">+ Adicionar</button>
+				</div>
+
+				<div class="lista-itens">
+					<article class="item-orcamento">
+						<div class="item-texto">
+							<h3>Troca de Óleo e Filtro</h3>
+							<p>Mão de obra especializada</p>
+						</div>
+						<div class="item-acoes">
+							<strong>R$ 120,00</strong>
+							<button class="botao-excluir" type="button" aria-label="Excluir Troca de Óleo e Filtro">
+								<svg viewBox="0 0 24 24" aria-hidden="true">
+									<path d="M6 7h12M9 7V5h6v2M8 10v8M12 10v8M16 10v8M7 7l1 14h8l1-14"></path>
+								</svg>
+							</button>
+						</div>
+					</article>
+
+					<article class="item-orcamento">
+						<div class="item-texto">
+							<h3>Alinhamento 3D</h3>
+							<p>Balanceamento incluso</p>
+						</div>
+						<div class="item-acoes">
+							<strong>R$ 80,00</strong>
+							<button class="botao-excluir" type="button" aria-label="Excluir Alinhamento 3D">
+								<svg viewBox="0 0 24 24" aria-hidden="true">
+									<path d="M6 7h12M9 7V5h6v2M8 10v8M12 10v8M16 10v8M7 7l1 14h8l1-14"></path>
+								</svg>
+							</button>
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<section class="secao secao-pecas" aria-labelledby="titulo-pecas">
+				<div class="secao-cabecalho secao-cabecalho-com-acao">
+					<div class="titulo-secao">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path d="M10.7 3h2.6l.5 2.2 1.6.7 1.9-1.2 1.8 1.8-1.2 1.9.7 1.6 2.2.5v2.6l-2.2.5-.7 1.6 1.2 1.9-1.8 1.8-1.9-1.2-1.6.7-.5 2.2h-2.6l-.5-2.2-1.6-.7-1.9 1.2-1.8-1.8 1.2-1.9-.7-1.6-2.2-.5v-2.6l2.2-.5.7-1.6-1.2-1.9 1.8-1.8 1.9 1.2 1.6-.7z"></path>
+							<circle cx="12" cy="12" r="3.1"></circle>
+						</svg>
+						<h2 id="titulo-pecas">Peças</h2>
+					</div>
+					<button class="botao-adicionar" type="button">+ Adicionar</button>
+				</div>
+
+				<div class="lista-itens">
+					<article class="item-orcamento item-orcamento-com-imagem">
+						<div class="miniatura-peca" aria-hidden="true"></div>
+						<div class="item-texto">
+							<h3>Óleo 5W30 Sintético</h3>
+							<p>Qtd: 4 Litros</p>
+						</div>
+						<div class="item-acoes">
+							<strong>R$ 220,00</strong>
+							<button class="botao-excluir" type="button" aria-label="Excluir Óleo 5W30 Sintético">
+								<svg viewBox="0 0 24 24" aria-hidden="true">
+									<path d="M6 7h12M9 7V5h6v2M8 10v8M12 10v8M16 10v8M7 7l1 14h8l1-14"></path>
+								</svg>
+							</button>
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<section class="secao secao-observacoes" aria-labelledby="titulo-observacoes">
+				<label id="titulo-observacoes" for="observacoes">Observações do Técnico</label>
+				<textarea id="observacoes" placeholder="Ex: Necessário verificar suspensão traseira&#10;em 3 meses..."></textarea>
+			</section>
+		</main>
+
+		<footer class="resumo-total" aria-label="Resumo do orçamento">
+			<div class="linha-total">
+				<div>
+					<span>Total Estimado</span>
+					<strong>R$ 420,00</strong>
+				</div>
+				<div class="total-detalhes">
+					<span>Serviços: R$ 200,00</span>
+					<span>Peças: R$ 220,00</span>
+				</div>
+			</div>
+			<div class="acoes-rodape">
+				<button class="botao-rascunho" type="button">Rascunho</button>
+				<a class="botao-salvar" href="orcamento-finalizado.html">
+					Salvar e Enviar
+					<svg viewBox="0 0 24 24" aria-hidden="true">
+						<path d="M4 5 21 12 4 19l3.5-7z"></path>
+						<path d="M7.5 12H21"></path>
+					</svg>
+				</a>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

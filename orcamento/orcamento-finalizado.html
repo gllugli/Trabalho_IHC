@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Orçamento Finalizado</title>
+	<link rel="stylesheet" href="orcamento-finalizado.css">
+</head>
+<body>
+	<div class="tela-orcamento-finalizado">
+		<header class="cabecalho" aria-label="Cabeçalho">
+			<button class="botao-menu" type="button" aria-label="Menu">
+				<svg viewBox="0 0 24 24" aria-hidden="true">
+					<path d="M4 7h16M4 12h16M4 17h16"></path>
+				</svg>
+			</button>
+			<div class="marca">Hunter</div>
+			<div class="avatar" aria-hidden="true"></div>
+		</header>
+
+		<main class="conteudo" aria-label="Orçamento finalizado">
+			<section class="confirmacao" aria-labelledby="titulo-confirmacao">
+				<div class="icone-sucesso" aria-hidden="true">
+					<svg viewBox="0 0 24 24">
+						<path d="M5.2 12.4 9.4 16.6 18.8 7.2"></path>
+					</svg>
+				</div>
+				<h1 id="titulo-confirmacao">Orçamento Concluído!</h1>
+				<p>O orçamento #4592 foi gerado com sucesso.</p>
+			</section>
+
+			<section class="cartao-veiculo" aria-label="Veículo">
+				<div class="icone-veiculo" aria-hidden="true">
+					<svg viewBox="0 0 24 24">
+						<path d="M5.3 11.2h13.4l-1.1-4.1A1.9 1.9 0 0 0 15.8 5.8H8.2a1.9 1.9 0 0 0-1.8 1.3L5.3 11.2Z"></path>
+						<path d="M4.6 11.2h14.8v6H4.6zM7.2 17.2v1.4M16.8 17.2v1.4"></path>
+						<circle cx="8.2" cy="14.4" r="1"></circle>
+						<circle cx="15.8" cy="14.4" r="1"></circle>
+					</svg>
+				</div>
+				<div class="dados-veiculo">
+					<h2>Toyota Corolla</h2>
+					<div class="detalhes-veiculo">
+						<span class="placa">ABC-1234</span>
+						<span>Prata • 2022</span>
+					</div>
+				</div>
+			</section>
+
+			<section class="cartao-itens" aria-labelledby="titulo-itens">
+				<h2 id="titulo-itens">RESUMO DE ITENS</h2>
+				<div class="item-resumo">
+					<div>
+						<h3>Mão de Obra</h3>
+						<p>Revisão Geral</p>
+					</div>
+					<strong>R$ 150,00</strong>
+				</div>
+				<div class="item-resumo">
+					<div>
+						<h3>Peças</h3>
+						<p>Kit de Filtros, Óleo 5W30</p>
+					</div>
+					<strong>R$ 320,00</strong>
+				</div>
+			</section>
+
+			<section class="valor-total" aria-label="Valor total">
+				<span>Valor Total</span>
+				<div>
+					<strong>R$ 470,00</strong>
+					<small>CONDIÇÕES: 3X NO CARTÃO</small>
+				</div>
+			</section>
+
+			<section class="acoes" aria-label="Ações">
+				<button class="botao-primario" type="button">
+					<svg viewBox="0 0 24 24" aria-hidden="true">
+						<path d="M4 5 21 12 4 19l3.4-7z"></path>
+						<path d="M7.4 12H21"></path>
+					</svg>
+					<span>Enviar para Cliente</span>
+				</button>
+				<button class="botao-secundario" type="button">
+					<svg viewBox="0 0 24 24" aria-hidden="true">
+						<path d="M8 3.8h7l2 2V20H8z"></path>
+						<path d="M15 3.8v2h2M6 6.5H4v15h11v-2"></path>
+						<path d="M10.3 10h4.8M10.3 13.2h4.8M10.3 16.4h3.2"></path>
+					</svg>
+					<span>Converter em Ordem de Serviço</span>
+				</button>
+			</section>
+		</main>
+
+		<nav class="navegacao" aria-label="Navegação inferior">
+			<a class="nav-item" href="../index.html" data-nav-target="../index.html">
+				<img src="../figma-assets/home.svg" alt="">
+				<span>Home</span>
+			</a>
+			<a class="nav-item nav-item-ativo" href="../resumo/resumo.html" aria-current="page" data-nav-target="../resumo/resumo.html">
+				<img src="../figma-assets/nav-resumo.svg" alt="">
+				<span>Resumo</span>
+			</a>
+			<a class="nav-item" href="../avisos/avisos.html" data-nav-target="../avisos/avisos.html">
+				<img src="../figma-assets/avisos.svg" alt="">
+				<span>Avisos</span>
+			</a>
+			<a class="nav-item" href="#">
+				<img src="../figma-assets/perfil.svg" alt="">
+				<span>Perfil</span>
+			</a>
+		</nav>
+	</div>
+	<script src="../nav.js"></script>
+</body>
+</html>

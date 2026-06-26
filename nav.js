@@ -11,12 +11,17 @@
 
     const normalizedTarget = normalizePage(target);
     const isCurrentPage = normalizedTarget === currentPage;
+    const isAnchor = item.tagName === 'A';
+    const isButton = item.tagName === 'BUTTON';
+    const hasNativeKeyboardActivation = isAnchor || isButton;
 
-    if (item.tagName === 'A') {
+    if (isAnchor) {
       item.setAttribute('href', target);
     } else {
-      item.setAttribute('role', 'link');
-      item.setAttribute('tabindex', '0');
+      if (!isButton) {
+        item.setAttribute('role', 'link');
+        item.setAttribute('tabindex', '0');
+      }
       item.style.cursor = 'pointer';
     }
 
@@ -53,10 +58,12 @@
     };
 
     item.addEventListener('click', goToTarget);
-    item.addEventListener('keydown', (event) => {
-      if (event.key === 'Enter' || event.key === ' ') {
-        goToTarget(event);
-      }
-    });
+    if (!hasNativeKeyboardActivation) {
+      item.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          goToTarget(event);
+        }
+      });
+    }
   });
 })();
